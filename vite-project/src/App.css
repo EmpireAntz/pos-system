@@ -25,6 +25,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #202020;
   font-family: Arial, sans-serif;
 }
 
@@ -38,7 +39,7 @@ body {
 }
 
 .display {
-  background-color: white;
+  background-color: rgb(156, 156, 156);
   border: 2px solid #ccc;
   border-radius: 5px;
   height: 50px;
@@ -84,7 +85,6 @@ body {
 .btn:hover {
   opacity: 0.8;
 }
-
 
 @keyframes logo-spin {
   from {
