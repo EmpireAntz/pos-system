@@ -18,6 +18,74 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.pin-pad {
+  background-color: #e0e0e0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.display {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background-color: #add8e6;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.number {
+  background-color: #add8e6;
+}
+
+.btn.clear {
+  background-color: #f08080;
+  grid-column: span 2;
+}
+
+.btn.enter {
+  background-color: #90ee90;
+  grid-column: span 2;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
